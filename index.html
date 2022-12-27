@@ -10,27 +10,139 @@
 <link rel="stylesheet" href="home.css">
 <body>
     
-    <nav>
-        <ul>
-            <li> 
-                Projects 
-            </li>
-            <li>
-                Resume
-            </li>
-        </ul>
+    <h1 class="welcomeHeader"> Welcome to my portfolio. </h1>
+        
+    <h3 class="explanation">  
+        If you're just looking for my printable resumé, it's  
+        <a href="https://docs.google.com/document/d/10f5WyGGWYveUmO1RjV9DQUUjIqFnuIhWcyhFvLr3EHQ/edit?usp=sharing">here.</a>
+ 
+        Just below this paragraph, you'll find software engineering / web development projects from my time at DigitalCrafts. 
+        Further down, you'll see my works from my years professionally running the <i>Dungeons and Dragons</i> tabletop roleplaying game.  
+        At the bottom of the page, you'll see a variety of ways to contact me. Don't be afraid to text me; it's the post-modern era. 
+    </h3>
+        
+    <div class="projects">
+        <!-- Each div will be its own box within the large projects box. 
+            Each project will have the same layout and style: a title with some tags below it, a description, a screenshot, and a link to the interactable project. Movie card type style.-->
+        <!-- Empty project div for copy and pasting 
+            <div class="project"> 
+                <h2> </h2>
+                <p class="tags">
+                    Language focus: 
+                    Time to complete: 
+                </p>
+                <p class="projectDescription">
+                    
+                </p>
+                <img class="projectScreenshot" src="" alt="A screenshot of">
+            </div>
+        -->
 
-    </nav>
-    
+            <div class="project"> 
+            <h2> <i> Monster of the Week </i> Python terminal game </h2>
+            <p class="tags">
+                Language focus: Python
+                Time to complete: 1 week
+            </p>
+            <p class="projectDescription">
+                My first coding assignment, this project was written in Python and originally played in the terminal of VS Code. 
+                The learning objective of this project was simple programming fundementals, object-oriented programming, and learning a new language quickly. 
+                <br>
+                The game itself is a text-based roleplaying game based on the tabletop roleplaying game 
+                <a href="https://evilhat.com/product/monster-of-the-week/">Monster of the Week.</a>            
+
+                It's running here using 
+                <a href="https://www.brython.info/index.html">Brython,</a>
+                A Python 3 implementation that makes the language compatible with HTML. 
+                As a disclaimer, I of course would never use Python with the end goal of making a web application, 
+                but I also don't expect anyone to download anything just to check out one of my projects. 
+
+                <br>
+
+                For more information on the original tabletop game and my logic in building the project, check out 
+                <a href="https://medium.com/@adamtwright7/monster-of-the-week-terminal-game-18b8db217a89">my article on the project.</a>
+
+                Click 
+                
+                <a href="">here</a>
+                
+                to play. Good hunting. 
+            </p>
+            <img class="projectScreenshot" src="" alt="A screenshot of the Python terminal game in play in VS Code.">
+        </div>
+        
+        <div class="project"> 
+            <h2> Madam Eva's Blackjack </h2>
+            <p class="tags">
+                Language focus: JavaScript
+                Time to complete: 1 week
+            </p>
+            <p class="projectDescription">
+                You have to start somewhere learning webpage interactivity. 
+                The exact goal of this assignment and the use case of the final project (although fun) is less important than the techniques and methods I learned while working on it 
+                -- mostly JavaScript and HTML fundementals and Document Object Model manipulation.
+                <br> 
+                In this project, you play blackjack with standard casino rules and a non-standard card deck.
+                I used some assets leftover from my D&D days in this one, particularly the Tarokka deck which appears in the 
+                <a href="https://dnd.wizards.com/products/curse-strahd-revamped">Curse of Strahd adventure book</a>
+                and an animated background made for play in the same adventure from 
+                <a href="https://www.patreon.com/BeneosBattlemaps">Beneos Battlemaps.</a>
+                <br>
+                You can test your luck <a href="./blackjack/blackjack.html">here.</a>
+
+            </p>
+            <img class="projectScreenshot" src="" alt="A screenshot of the blackjack game in play.">
+
+            <div class="project"> 
+                <h2> Front-end Poetry </h2>
+                <p class="tags">
+                    Language focus: CSS 
+                    Time to complete: 2 Weeks 
+                </p>
+                <p class="projectDescription">
+                    It was with this project that I began to start truly using the internet in my webpages. I learned how to use APIs and databases and their contents on live webpages with this project.
+                    The final product was a web page that allows the user to... [poetry stuff]
+                </p>
+                <img class="projectScreenshot" src="" alt="A screenshot of">
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="DND">
+        <h2> The D&D days </h2>
+        
+        <p class="DNDdays">
+            Welcome, adventurer! By now you've likely heard that I played D&D for a living for about a year and a half. This is exceptionally unusual, so I have some explaining to do. 
+
+            <a href="https://startplaying.games/gm/adam">StartPlaying profile</a>
+
+            <a href="https://www.dmsguild.com/browse.php?author=Adam%20Wright"> DM's Guild publications </a>
+             
+              
+
+        </p>
+        
+    </div>
+
     <footer>
         <ul>
             <li> 
-                Socials 
+                Connect with me on <a href="https://www.linkedin.com/in/adamtwright/">LinkedIn</a>
             </li>
             <li>
-                Contact Me
+                Email Me at <a href="mailto:adamtwright7@gmail.com">adamtwright7@gmail.com </a>
+            </li>
+            <li>
+                Text Me: <a href="tel:4049187035">404-918-7035</a> 
+            </li>
+            <li>
+                Check out my printable 
+                <a href="https://docs.google.com/document/d/10f5WyGGWYveUmO1RjV9DQUUjIqFnuIhWcyhFvLr3EHQ/edit?usp=sharing">resumé.</a>
             </li>
         </ul>
+        <p class="attribution"> All icons are from The Noun Project. </p>
     </footer>
 
 </body>
