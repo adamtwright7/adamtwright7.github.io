@@ -74,7 +74,7 @@ window.addEventListener("DOMContentLoaded", () => {
     // disables the hit and stand buttons 
     hitButton.toggleAttribute("disabled")
     standButton.toggleAttribute("disabled")
-    if (localStorage.getItem("dealerWins") == false){ // if there isn't already storage of wins,
+    if (Number.isInteger(localStorage.getItem("dealerWins"))){ // if there isn't already storage of wins,
         localStorage.setItem("dealerWins",0) // start storing wins and set them to 0
         localStorage.setItem("playerWins",0)
     }
