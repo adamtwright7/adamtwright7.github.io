@@ -11,6 +11,10 @@ const dealerPointsDOM = document.getElementById("dealer-points")
 const playerPointsDOM = document.getElementById("player-points")
 const messageBox = document.getElementById("messages")
 
+// get variables for wins/losses
+const dealerWinsDOM = document.getElementById("dealer-wins");
+const playerWinsDOM = document.getElementById("player-wins");
+
 // initializing stuff 
 let playerHand = [];
 let dealerHand = [];
@@ -74,10 +78,15 @@ window.addEventListener("DOMContentLoaded", () => {
     // disables the hit and stand buttons 
     hitButton.toggleAttribute("disabled")
     standButton.toggleAttribute("disabled")
-    if (Number.isInteger(localStorage.getItem("dealerWins"))){ // if there isn't already storage of wins,
+    if (!Number.isInteger(parseInt(localStorage.getItem("dealerWins")))){ // if there isn't already storage of wins,
+        console.log("setting local storage to 0")
         localStorage.setItem("dealerWins",0) // start storing wins and set them to 0
         localStorage.setItem("playerWins",0)
     }
+
+    // player and dealer wins are grabbed from local storage when the page loads. 
+    playerWinsDOM.innerText = localStorage.playerWins; 
+    dealerWinsDOM.innerText = localStorage.dealerWins;
 });
 
 // Dealing code. First, we'll make a function that deals 
@@ -234,16 +243,7 @@ const winnerIs = (playerOrDealer) => {
 // Play again button functionality 
 playAgainButton.addEventListener("click", () => {location.reload()})
 
-// Stretch goals: ===========================================================
-// Track games won ----------------
-
-// get variables 
-const dealerWinsDOM = document.getElementById("dealer-wins");
-const playerWinsDOM = document.getElementById("player-wins");
-
-// player and dealer wins are grabbed from local storage when the page loads. 
-playerWinsDOM.innerText = localStorage.playerWins; 
-dealerWinsDOM.innerText = localStorage.dealerWins;
+// Stretch goals: ==========================================================
 
 // betting feature 
 // playing with multiple decks
