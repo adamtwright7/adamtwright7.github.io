@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodboard</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- This is basically a copy of the search page which just searches for pre-defined keywords for any button pressed.-->
+    <div class="bg-darkBlue w-screen">
+        <a href="./homePage.html">
+            <img src="./assets/home.png" alt="Home Icon" class= "block mx-auto max-h-[10vh]">
+        </a>
+    </div>
+
+    <!-- buttons to get random poems. -->
+    <div class="bg-lightBlue p-4 space-y-1 text-whiteBlue grid"> 
+        <!-- Need a square outline without any gaps -->
+        <p class="text-lg text-center">How are you feeling?</p>
+
+        <!-- All buttons use the same code as the search page's "get random by title", with a hard-coded keyword matching its ID.-->
+        <!-- The lovesick button searches for love, mournfull searches for death, ect.-->
+        <button id="love"> Lovesick </button> 
+        <button id="death"> Grim </button>
+
+    </div>
+
+    <div id="searchResults" class="bg-darkBlue p-1 min-h-screen"> 
+        <h2> No results yet... </h2>
+    </div>
+
+</body>
+<script src="./moodboard.js"></script>
+</html>

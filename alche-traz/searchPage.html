@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Poems</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <!-- Nav bar with just the homepage -->
+    <div class="bg-darkBlue w-screen">
+        <a href="./homePage.html">
+            <img src="./assets/home.png" alt="Home Icon" class= "block mx-auto max-h-[10vh]">
+        </a>
+    </div>
+    
+    <div class="bg-lightBlue p-4 text-whiteBlue text-center"> 
+
+        <label for="allByTitle">Search all poems by title.</label>
+        <br>
+        <p class="text-sm">Hint: Try searching "fragment"!</p>
+        <input id="allByTitle" placeholder="Enter title..." > </input>
+        <button class="allByTitle"> Search! </button>
+
+        <br>
+        <label for="randByTitle">Get a random poem by title.</label>
+        <br>
+        <p class="text-sm">Hint: Try searching "ode"!</p>
+        <input id="randByTitle" placeholder="Enter title..." > </input>
+        <button class="randByTitle"> Search! </button>
+
+        <br>
+        <label for="allByAuthor"> Search all poems by author. </label>
+        <br>
+        <p class="text-sm">Hint: Try searching "Shelley" or "Poe"!</p>
+        <input id="allByAuthor" placeholder="Enter author..." > </input>
+        <button class="allByAuthor"> Search! </button>
+
+        <br>
+        <label for="randByAuthor"> Get a random poem by author.</label>
+        <br>
+        <p class="text-sm">Hint: Try searching "Shakespeare" or "Byron"!</p>
+        <input id="randByAuthor" placeholder="Enter author..." > </input>
+        <button class="randByAuthor"> Search! </button>
+
+    </div>
+
+    <!-- No extra divs here because I want the attributions to be next to each poem. -->
+    <div id="searchResults" class="bg-darkBlue p-1 min-h-screen"> 
+        <h2> No results yet... </h2>
+    </div>
+
+</body>
+<script src="searchPage.js"></script>
+</html>

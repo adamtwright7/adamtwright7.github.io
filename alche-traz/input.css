@@ -1,0 +1,36 @@
+/* Tailwind directives */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Better buttons and inputs for all pages */
+
+button{
+    background-color: #0C2D48;
+}
+
+input{
+    border-radius: .5rem;
+    background-color: #145DA0;
+}
+
+label,
+input,
+button{
+    padding: 4px;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+h2,
+h3{
+    font-family: 'Bebas Neue';
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+#searchResults{
+    color: #2E8BC0;
+    font-family: 'Bebas Neue';
+    color: #B1D4E0;
+}

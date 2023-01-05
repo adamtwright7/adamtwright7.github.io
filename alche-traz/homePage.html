@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alche-traz Home</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- Font stuff -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caramel&family=Gothic+A1:wght@400&family=Mansalva&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Main container that I can mess with instead of <body> -->
+    <div class="bg-lightBlue"> 
+        <nav class="relative container">
+            
+            <h1 class="text-center text-4xl" style="font-family: 'Mansalva', cursive"> 
+                Alche-traz
+            </h1>
+            
+            <!-- These two images overlaid should be the logo, which should stick together and stay at the top of the page -->
+            <div class="flex items-center justify-center m-20">
+                <img class="relative w-[70vw] sm:w-[40vh] md:w-fit md:py-16" src="./assets/bars.png" alt="bars icon">
+                <img class="absolute w-[70vw] sm:w-[40vh] md:w-fit md:py-16" src="./assets/potion.png" alt="potion icon">
+            </div>
+
+            <h3 class="text-center text-3xl" style="font-family: 'Caramel', cursive;">
+                mixing bars for your inspiration
+            </h3>
+        </nav>
+        
+        <!-- Menu items that will send you to new pages -->
+        <div class="flex justify-between">
+            <a href="./searchPage.html" class="hover:shadow-lg rounded-full">
+                <img src="./assets/search.png" alt="Search Icon">
+            </a>
+            
+            <a href="./moodboard.html" class="hover:shadow-lg rounded-full">
+                <img src="./assets/moodboard.png" alt="Moodboard Icon">
+            </a>
+            
+            <a href="./randomPage.html" class="hover:shadow-lg rounded-full">  
+                <img src="./assets/dice.png" alt="Random Icon">
+            </a>
+        </div>
+            
+        <!-- instructions -->
+        <p class="text-whiteBlue text-center" style="font-family: 'Gothic A1', sans-serif;"> 
+            
+            Looking for something? Tap the search icon above or click <a href="./searchPage.html">here</a> to search poems by author or title. 
+            
+            <br>
+
+            Need some inspiration? Get a random poem by tapping the dice above or clicking <a href="./randomPage.html">here</a>.
+
+            <br>
+
+            Feelin' some typa way? Visit the moodboard by tapping the center icon above or clicking <a href="./moodboard.html">here</a>.
+
+        </p>
+
+        <!-- About -->
+        <div class="text-whiteBlue bg-blackBlue text-center" style="font-family: 'Bebas Neue', cursive;">
+            <p class="text-xl font-bold mt-4"> About </p>
+
+            <br>
+
+            This is a frontend framework for Thundercomb's <a href="https://github.com/thundercomb/poetrydb"> poetry database. </a> 
+            
+            <br>
+
+            Made by <a href="https://adamtwright7.github.io/">Adam Wright.</a>
+
+            <br>
+            
+            The logo at the top of the page is two overlain icons from The Noun Project: "five" and "potion".
+            
+            The bars icon is 
+            <a href="https://thenounproject.com/icon/five-655299/">“five”</a>
+            from W. X. Chee.
+            
+            <br>
+            
+            The potion icon is
+            <a href="https://thenounproject.com/icon/potion-2809666/">“potion”</a>
+            from Blaise Sewell.  
+            
+            <br>
+            
+            The navbar contains three more icrons from The Noun Project: 
+            
+            <br>
+            
+            The search icon is 
+            <a href="https://thenounproject.com/icon/search-1072503/">"Search"</a>
+            from AliWijaya. 
+            
+            <br>
+            
+            The dice icon is 
+            <a href="https://thenounproject.com/icon/dice-1765632/">"Dice"</a>
+            by Andy Ivandikov. 
+            
+            <br>
+            
+            The moodboard icon is 
+            <a href="https://thenounproject.com/icon/moodboard-1561648/">"moodboard"</a>
+            by Bê Sabino.
+            
+            <br>
+
+            The moodboard heart background is from <a href="https://unsplash.com/@alexacea?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alexandru Acea.</a>
+
+            <br>
+
+            The moodboard skull background is from <a href="https://unsplash.com/@jonjons?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jon Butterworth.</a>
+
+            <br>
+            
+            Each page has a home icon, which is 
+            <a href="https://thenounproject.com/icon/home-5392655/">"Home"</a>
+            by Neneng Fadliyah.
+            
+            <br>
+
+            This site's color palette is 
+            <a href="https://www.canva.com/colors/color-palettes/mermaid-lagoon/">"Mermaid Lagoon"</a>
+            from Canva. 
+
+        </div>
+    </div>
+        
+    </body>
+    <script src="alchetraz.js"></script>
+    </html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Poems</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    
+    <!-- Nav bar with just the homepage -->
+    <div class="bg-darkBlue w-screen">
+        <a href="./homePage.html">
+            <img src="./assets/home.png" alt="Home Icon" class= "block mx-auto max-h-[10vh]">
+        </a>
+    </div>
+
+    <!-- buttons to get random poems. -->
+    <div class="bg-lightBlue p-4 space-y-1 text-whiteBlue text-center"> 
+        <!-- Need a square outline without any gaps -->
+        <button class="randomFullPoem"> Get a random poem</button>
+        <hr class="border-blackBlue">
+        <button class="randomSonnet"> Generate a sonnet</button>
+        <p class="text-sm">Each line will be taken from a different poem with 14 lines.</p>
+        <hr class="border-blackBlue">
+        <button class="randomHaiku"> Generate a haiku</button>
+        <p class="text-sm">Each line will be taken from a different poem with 3 lines.</p>
+        <hr class="border-blackBlue">
+        <label for="randomNum"> Generate a poem with any number of lines! </label>
+        <p class="text-sm"> Each line will be taken from a different poem. Try entering "4" for a quick quatrain!</p>
+        <input id="randomNum" placeholder="Enter a number of lines..."> </input>
+        <button class="randomNum"> Generate! </button>
+    </div>
+
+    <div id="searchResults" class="bg-darkBlue p-1 min-h-screen">
+        <div class="attribution"> 
+            <h2>No results yet...</h2>
+        </div>
+        <br>
+        <div class="poemText"> </div>
+    </div>
+
+
+</body>
+<script src="./randomPage.js"></script>
+</html>
