@@ -632,12 +632,12 @@ video {
   background-color: rgb(20 93 160 / var(--tw-bg-opacity));
 }
 
-.bg-heart {
-  background-image: url('../assets/heart.jpg');
-}
-
 .bg-skull {
   background-image: url('../assets/skull.jpg');
+}
+
+.bg-heart {
+  background-image: url('../assets/heart.jpg');
 }
 
 .bg-contain {
@@ -681,6 +681,11 @@ video {
   line-height: 1.25rem;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -716,13 +721,40 @@ h2,
 h3{
   font-family: 'Bebas Neue';
   font-size: 1.25rem;
-  line-height: 1.75rem;
+  text-align: center;
+}
+
+p{
+  text-align: center;
 }
 
 #searchResults{
-  color: #2E8BC0;
   font-family: 'Bebas Neue';
   color: #B1D4E0;
+}
+
+/* On larger screens, increase font size. */
+
+@media screen and (min-width: 486px){
+  h2,
+    h3{
+    font-size: 2rem;
+  }
+
+  p{
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 720px){
+  h2,
+    h3{
+    font-size: 3rem;
+  }
+
+  p{
+    font-size: 2rem;
+  }
 }
 
 .hover\:shadow-lg:hover {
