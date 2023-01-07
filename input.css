@@ -1,0 +1,11 @@
+/* This is the input file for my CSS. It contains the directives for Tailwind and some manual CSS. 
+Tailwind combines the utility classes from any HTML files with the manual CSS into the output file in the CSS folder, which are linked to the HTML files. */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+footer{
+    position: sticky;
+}
+
