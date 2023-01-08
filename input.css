@@ -9,3 +9,12 @@ footer{
     position: sticky;
 }
 
+/* Making some classes for all the header icons */
+@layer components{
+    .header-icon{
+        @apply shadow-lg rounded-full hover:rounded-3xl transition-all;
+    }
+    .navTooltip{
+        @apply text-xs text-whiteCopper transition-all scale-0 duration-100;
+    }
+}

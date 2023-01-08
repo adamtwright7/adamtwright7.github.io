@@ -4,29 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adam's Portfolio - Home</title>
+    <title>Adam Wright's Portfolio - Home</title>
     <link rel="stylesheet" href="./CSS/main.css">
 </head>
 <link rel="stylesheet" href="home.css">
 <body>
     
-    <header class="bg-offBlack flex flex-row justify-start items-center flex-[1fr] text-whiteCopper">
-        <img src="./mainAssets/logo.jpg" class="w-[20vw] md:w-[10vw] flex-grow-[1] " alt="Copper Dragon Logo">
+    <!-- body div that I mess with instead of the body tag -->
+    <div class="bg-brownCopper">
 
-        <div class="flex flex-col items-center justify-center flex-grow-[40]">
-            <h1> Adam Wright </h1>
-            <h3> Test </h3>
-        </div>
-    </header>
+
+    <!-- Header at the top of the page including logo and nav bar -->
+    <div class="bg-copper flex flex-row justify-between items-center">
         
-    <h3 class="explanation">  
+        <div class="flex flex-col text-center group">
+            <a href="./index.html" class="header-icon">
+                <img src="./mainAssets/logo.jpg" alt="Copper Dragon Logo" class="max-w-[20vw] md:max-w-[15vw] xl:max-w-[10vw]">
+            </a>
+            <span class="navTooltip group-hover:scale-100">Home</span>
+        </div>
+
+        <!-- Each logo is a flexbox with a tooltip below a button which is an icon with a link -->
+        <div class="flex flex-col text-center group">
+            <a href="" class="header-icon">
+                <img src="./mainAssets/project.png" alt="project icon" class="max-w-[20vw] md:max-w-[15vw] xl:max-w-[10vw]">
+            </a>
+            <span class="navTooltip group-hover:scale-100">Projects</span>
+        </div>
+        
+        <div class="flex flex-col text-center group">
+            <a href="" class="header-icon">
+                <img src="./mainAssets/contact.png" alt="contact icon" class="max-w-[20vw] md:max-w-[15vw] xl:max-w-[10vw]">
+            </a>
+            <span class="navTooltip group-hover:scale-100">Contact Me</span>
+        </div>
+
+        <div class="flex flex-col text-center group mr-6">
+            <a href="" class="header-icon">
+                <img src="./mainAssets/past.png" alt="past icon" class="max-w-[20vw] md:max-w-[15vw] xl:max-w-[10vw]">
+            </a>
+            <span class="navTooltip group-hover:scale-100">The Past</span>
+        </div>
+
+
+    </div>
+        
+    <div class="explanation">  
+
+        <h2> Adam Wright </h2>
+        <h3> Software Engineer </h3>
+
         If you're just looking for my printable resumé, it's  
         <a href="https://docs.google.com/document/d/10f5WyGGWYveUmO1RjV9DQUUjIqFnuIhWcyhFvLr3EHQ/edit?usp=sharing">here.</a>
  
         Just below this paragraph, you'll find software engineering / web development projects from my time at DigitalCrafts. 
         Further down, you'll see my works from my years professionally running the <i>Dungeons and Dragons</i> tabletop roleplaying game.  
         At the bottom of the page, you'll see a variety of ways to contact me. 
-    </h3>
+    </div>
         
     <div class="projects">
         <!-- Each div will be its own box within the large projects box. 
@@ -133,6 +167,7 @@
         </p>
         
     </div>
+    </div> 
 
     <footer class="flex flex-row justify-around bg-offBlack text-whiteCopper"> 
         <p>Connect with me on <a href="https://www.linkedin.com/in/adamtwright/">LinkedIn</a> </p>
@@ -142,7 +177,9 @@
             Check out my printable 
             <a href="https://docs.google.com/document/d/10f5WyGGWYveUmO1RjV9DQUUjIqFnuIhWcyhFvLr3EHQ/edit?usp=sharing">resumé.</a>
         </p>
-        <p class="attribution"> All icons are from The Noun Project. </p>
+        <p> 
+            <a href="./attribution.html">Logo and icon attribution</a>
+        </p>
     </footer>
 
 </body>
