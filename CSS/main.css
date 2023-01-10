@@ -521,7 +521,7 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+  transition-duration: 100ms;
 }
 
 .header-icon:hover {
@@ -541,12 +541,17 @@ video {
   transition-duration: 100ms;
 }
 
-.relative {
-  position: relative;
+.fixed {
+  position: fixed;
 }
 
-.mr-4 {
-  margin-right: 1rem;
+.z-10 {
+  z-index: 10;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .mr-6 {
@@ -561,24 +566,12 @@ video {
   display: contents;
 }
 
-.aspect-\[1650\/2550\] {
-  aspect-ratio: 1650/2550;
-}
-
-.max-h-\[20vh\] {
-  max-height: 20vh;
-}
-
-.w-\[20vw\] {
-  width: 20vw;
+.w-screen {
+  width: 100vw;
 }
 
 .max-w-\[20vw\] {
   max-width: 20vw;
-}
-
-.max-w-\[10vw\] {
-  max-width: 10vw;
 }
 
 .flex-row {
@@ -593,6 +586,10 @@ video {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -601,10 +598,9 @@ video {
   justify-content: space-around;
 }
 
-.space-x-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1rem * var(--tw-space-x-reverse));
-  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+.border-copper {
+  --tw-border-opacity: 1;
+  border-color: rgb(231 144 44 / var(--tw-border-opacity));
 }
 
 .bg-brownCopper {
@@ -622,12 +618,30 @@ video {
   background-color: rgb(4 4 4 / var(--tw-bg-opacity));
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
 .text-center {
   text-align: center;
 }
 
-.align-middle {
-  vertical-align: middle;
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .text-whiteCopper {
@@ -635,11 +649,71 @@ video {
   color: rgb(233 238 229 / var(--tw-text-opacity));
 }
 
-footer{
-  position: sticky;
+.text-copper {
+  --tw-text-opacity: 1;
+  color: rgb(231 144 44 / var(--tw-text-opacity));
 }
 
 /* Making some classes for all the header icons */
+
+/* I like my links underlined */
+
+a{
+  text-decoration: underline;
+}
+
+/* Typing effect */
+
+/* Need a nerdy lookin font */
+
+#typewriter{
+  /* Apply the nerdy font + user monospace to look more like keystrokes */
+  font-family: 'Anonymous Pro', monospace;
+  /* Using border box so the text stays centered through the animation */
+  box-sizing: border-box;
+  /* So that text that isn't typed yet stays hidden */
+  overflow: hidden;
+}
+
+/* So that I can use position:absolute in a sec to make an overlain element */
+
+#typewriter p{
+  position: relative;
+}
+
+/* I want to change the number of steps in this animation later, so I'll make it a CSS variable, then change that variable in the DOM.*/
+
+:root{
+  /* Start at 17 because there are 17 characters in "Software Engineer" */
+  --numSteps: 17
+
+}
+
+/* Creates an element on top of the text that is slowly pushed away, looking like typing. */
+
+#typeLine2::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #040404;
+  /* The border will be the cursor, which whill be white-copper like the non-name text. */
+  border-left: 2px solid #e9eee5;
+  /* Now for the "typing" animation. */
+  animation: animate 4s steps(var(--numSteps)) infinite;
+}
+
+@keyframes animate{
+  40%, 60%{
+    left: 100%;
+  }
+
+  100%{
+    left: 0%;
+  }
+}
 
 .group:hover .group-hover\:scale-100 {
   --tw-scale-x: 1;
@@ -648,26 +722,8 @@ footer{
 }
 
 @media (min-width: 768px) {
-  .md\:w-\[10vw\] {
-    width: 10vw;
-  }
-
-  .md\:max-w-\[10vw\] {
-    max-width: 10vw;
-  }
-
   .md\:max-w-\[15vw\] {
     max-width: 15vw;
-  }
-}
-
-@media (min-width: 976px) {
-  .lg\:max-w-\[20vw\] {
-    max-width: 20vw;
-  }
-
-  .lg\:max-w-\[10vw\] {
-    max-width: 10vw;
   }
 }
 

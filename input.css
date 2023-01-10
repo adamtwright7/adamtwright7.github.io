@@ -5,16 +5,66 @@ Tailwind combines the utility classes from any HTML files with the manual CSS in
 @tailwind components;
 @tailwind utilities;
 
-footer{
-    position: sticky;
-}
-
 /* Making some classes for all the header icons */
 @layer components{
     .header-icon{
-        @apply shadow-lg rounded-full hover:rounded-3xl transition-all;
+        @apply shadow-lg rounded-full hover:rounded-3xl transition-all duration-100;
     }
     .navTooltip{
         @apply text-xs text-whiteCopper transition-all scale-0 duration-100;
     }
+}
+
+/* I like my links underlined */
+a{
+  text-decoration: underline;
+}
+
+/* Typing effect */
+
+/* Need a nerdy lookin font */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro); 
+
+#typewriter{
+  /* Apply the nerdy font + user monospace to look more like keystrokes */
+  font-family: 'Anonymous Pro', monospace;
+  /* Using border box so the text stays centered through the animation */
+  box-sizing: border-box;
+  /* So that text that isn't typed yet stays hidden */
+  overflow: hidden;
+}
+
+/* So that I can use position:absolute in a sec to make an overlain element */
+#typewriter p{
+  position: relative;
+}
+
+/* I want to change the number of steps in this animation later, so I'll make it a CSS variable, then change that variable in the DOM.*/
+:root{
+  /* Start at 17 because there are 17 characters in "Software Engineer" */
+  --numSteps: 17
+}
+
+/* Creates an element on top of the text that is slowly pushed away, looking like typing. */
+#typeLine2::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #040404;
+  /* The border will be the cursor, which whill be white-copper like the non-name text. */
+  border-left: 2px solid #e9eee5; 
+  /* Now for the "typing" animation. */
+  animation: animate 4s steps(var(--numSteps)) infinite;
+}
+
+@keyframes animate{
+  40%, 60%{
+    left: 100%;
+  }
+  100%{
+    left: 0%;
+  }
 }

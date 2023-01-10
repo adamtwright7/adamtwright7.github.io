@@ -10,8 +10,8 @@
 <link rel="stylesheet" href="home.css">
 <body>
     
-    <!-- body div that I mess with instead of the body tag -->
-    <div class="bg-brownCopper">
+<!-- body div that I mess with instead of the body tag -->
+<div class="bg-brownCopper">
 
 
     <!-- Header at the top of the page including logo and nav bar -->
@@ -26,43 +26,55 @@
 
         <!-- Each logo is a flexbox with a tooltip below a button which is an icon with a link -->
         <div class="flex flex-col text-center group">
-            <a href="" class="header-icon">
+            <a href="index.html#projects" class="header-icon">
                 <img src="./mainAssets/project.png" alt="project icon" class="max-w-[20vw] md:max-w-[15vw] xl:max-w-[10vw]">
             </a>
             <span class="navTooltip group-hover:scale-100">Projects</span>
         </div>
         
         <div class="flex flex-col text-center group">
-            <a href="" class="header-icon">
+            <a href="./index.html#contact" class="header-icon">
                 <img src="./mainAssets/contact.png" alt="contact icon" class="max-w-[20vw] md:max-w-[15vw] xl:max-w-[10vw]">
             </a>
             <span class="navTooltip group-hover:scale-100">Contact Me</span>
         </div>
 
         <div class="flex flex-col text-center group mr-6">
-            <a href="" class="header-icon">
+            <a href="./thePast.html" class="header-icon">
                 <img src="./mainAssets/past.png" alt="past icon" class="max-w-[20vw] md:max-w-[15vw] xl:max-w-[10vw]">
             </a>
             <span class="navTooltip group-hover:scale-100">The Past</span>
         </div>
 
-
     </div>
-        
-    <div class="explanation">  
+    
+    <!-- typerwriter section -->
+    <div id="typewriter" class="flex w-screen items-center justify-center bg-offBlack text-whiteCopper font-semibold text-xl py-4"> 
+        <p id="typeLine1" class="text-copper"> Adam Wright, </p> &nbsp
+        <p id="typeLine2"> Software Engineer </p>
+    </div>
 
-        <h2> Adam Wright </h2>
-        <h3> Software Engineer </h3>
+    <p id="explanation" class="text-whiteCopper p-4 text-center"> 
+
+        Welcome! 
 
         If you're just looking for my printable resumé, it's  
-        <a href="https://docs.google.com/document/d/10f5WyGGWYveUmO1RjV9DQUUjIqFnuIhWcyhFvLr3EHQ/edit?usp=sharing">here.</a>
+        <a href="https://docs.google.com/document/d/1l3HXSKQzm7r9Tpn9wowhmNN_LB3i5uIHbT3i3xpebKo/edit?usp=sharing">here</a>.
  
-        Just below this paragraph, you'll find software engineering / web development projects from my time at DigitalCrafts. 
-        Further down, you'll see my works from my years professionally running the <i>Dungeons and Dragons</i> tabletop roleplaying game.  
-        At the bottom of the page, you'll see a variety of ways to contact me. 
-    </div>
-        
-    <div class="projects">
+        <br>
+        As you can tell by the github.io domain, I made this website myself! Feel free to 
+        <a href="https://github.com/adamtwright7/adamtwright7.github.io">dig around the code</a>.
+
+        <br>
+        Just below this paragraph, you'll find <a href="#projects">projects</a> from my time at DigitalCrafts. 
+        <br> 
+        At the bottom of the page, you'll see a variety of ways to <a href="#contact">contact me</a>.
+        <br>
+        If you're wondering what's up with me, you can check out my <a href="./thePast.html">past</a>.
+    </p>
+    <hr class="border-copper my-4">
+    
+    <div id="projects" class="text-whiteCopper p-4">
         <!-- Each div will be its own box within the large projects box. 
             Each project will have the same layout and style: a title with some tags below it, a description, a screenshot, and a link to the interactable project. Movie card type style.-->
         <!-- Empty project div for copy and pasting 
@@ -92,22 +104,13 @@
                 The game itself is a text-based roleplaying game based on the tabletop roleplaying game 
                 <a href="https://evilhat.com/product/monster-of-the-week/">Monster of the Week.</a>            
 
-                It's running here using 
-                <a href="https://www.brython.info/index.html">Brython,</a>
-                A Python 3 implementation that makes the language compatible with HTML. 
-                As a disclaimer, I of course would never use Python with the end goal of making a web application, 
-                but I also don't expect anyone to download anything just to check out one of my projects. 
-
                 <br>
 
                 For more information on the original tabletop game and my logic in building the project, check out 
                 <a href="https://medium.com/@adamtwright7/monster-of-the-week-terminal-game-18b8db217a89">my article on the project.</a>
 
-                Click 
-                
-                <a href="">here</a>
-                
-                to play. Good hunting. 
+                Good <a href="./pythonGame/pythonGame.py"> hunting</a>.
+
             </p>
             <img class="projectScreenshot" src="" alt="A screenshot of the Python terminal game in play in VS Code.">
         </div>
@@ -151,25 +154,10 @@
             </div>
 
         </div>
-
     </div>
+</div> 
 
-    <div class="DND">
-        <h2> The D&D days </h2>
-        
-        <p class="DNDdays">
-            Welcome, adventurer! By now you've likely heard that I played D&D for a living for about a year and a half. This is exceptionally unusual, so I have some explaining to do. 
-
-            <a href="https://startplaying.games/gm/adam">StartPlaying profile</a>
-
-            <a href="https://www.dmsguild.com/browse.php?author=Adam%20Wright"> DM's Guild publications </a>
-             
-        </p>
-        
-    </div>
-    </div> 
-
-    <footer class="flex flex-row justify-around bg-offBlack text-whiteCopper"> 
+    <footer id="contact" class="flex flex-row justify-around bg-offBlack text-whiteCopper py-4"> 
         <p>Connect with me on <a href="https://www.linkedin.com/in/adamtwright/">LinkedIn</a> </p>
         <p>Email Me at <a href="mailto:adamtwright7@gmail.com">adamtwright7@gmail.com </a></p>
         <p>Text Me: <a href="tel:4049187035">404-918-7035</a></p>
@@ -183,4 +171,5 @@
     </footer>
 
 </body>
+<script src="index.js"></script>
 </html>
