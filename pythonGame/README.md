@@ -21,3 +21,7 @@ Your Hunter has 5 Ratings: Charm, Cool, Sharp, Tough, and Weird. The higher rati
 - Cool can be used to run away in the big battle. 
 
 That's all you need to know to jump in. Good hunting. 
+
+### **Replit.**
+
+Want to jump in now? Hit "Run" on the live [Replit](https://replit.com/@adamtwright7/MotW-Terminal-Game#main.py) and follow the instructions in the console. Close the sidebar (hide files) and maximize the console for the best experience.
