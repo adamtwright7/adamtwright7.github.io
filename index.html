@@ -70,7 +70,7 @@
         <br> 
         At the bottom of the page, you'll see a variety of ways to <a href="#contact">contact me</a>.
         <br>
-        If you're wondering what's up with me, you can check out my <a href="./thePast.html">past</a>.
+        If you're wondering what's up with me or looking for logo/icon attribution, you can check out the <a href="./thePast.html">past</a> page.
     </p>
     <hr class="border-copper my-4">
     
@@ -86,7 +86,7 @@
                 Time to complete: 
             </p>
 
-            <div id="projectDescription" class="grid grid-cols-2 grid-flow-row gap-8 m-4 items-center">
+            <div id="projectDescription" class="grid md:grid-cols-2 md:grid-flow-row gap-8 m-4 items-center">
                 <a href="">
                     <img class="mx-auto" src="" alt="A picture of the project.">
                 </a>
@@ -114,7 +114,7 @@
                 Time to complete: 1 week
             </p>
 
-            <div id="projectDescription" class="grid grid-cols-2 grid-flow-row gap-8 m-4 items-center">
+            <div id="projectDescription" class="grid md:grid-cols-2 md:grid-flow-row gap-8 m-4 items-center">
 
                 <a href="./pythonGame/terminalFrontend.html">
                     <img class="mx-auto" src="./mainAssets/motwTerminal.png" alt="A screenshot of the Python terminal game in play in VS Code.">
@@ -145,7 +145,7 @@
                 Time to complete: 1 week
             </p>
 
-            <div id="projectDescription" class="grid grid-cols-2 grid-flow-row gap-8 m-4 items-center">
+            <div id="projectDescription" class="grid md:grid-cols-2 md:grid-flow-row gap-8 m-4 items-center">
 
                 <a href="./blackjack/blackjack.html">
                     <img class="mx-auto" src="./mainAssets/BarovianBlackjack.png" alt="A screenshot of the blackjack game in play.">
@@ -180,7 +180,7 @@
                 Time to complete: 1.5 weeks 
             </p>
 
-            <div id="projectDescription" class="grid grid-cols-2 grid-flow-row gap-8 m-4 items-center">
+            <div id="projectDescription" class="grid md:grid-cols-2 md:grid-flow-row gap-8 m-4 items-center">
                 <a href="./alche-traz/homePage.html">
                     <img class="mx-auto" src="./mainAssets/alche-trazHome.png" alt="The Alche-traz home page on mobile">
                 </a>
@@ -200,21 +200,34 @@
         </div>
         
         <hr class="border-copper my-8">
+        <div class="flex items-center justify-center">
+            <a href="#top">
+                <button class="bg-copper p-4 rounded-full"> Back to top </button>
+            </a>
+        </div>
+
         </div>
     </div>
 </div> 
 
-    <footer id="contact" class="flex flex-row justify-around bg-offBlack text-whiteCopper py-4"> 
-        <p>Connect with me on <a href="https://www.linkedin.com/in/adamtwright/">LinkedIn</a> </p>
-        <p>Email Me at <a href="mailto:adamtwright7@gmail.com">adamtwright7@gmail.com </a></p>
-        <p>Text Me: <a href="tel:4049187035">404-918-7035</a></p>
-        <p>
-            Check out my printable 
+    <footer id="contact" class="grid grid-flow-row grid-cols-4 gap-4 justify-around items-center text-center bg-offBlack text-whiteCopper p-4"> 
+        <p class="hidden md:block">Connect with me on <a href="https://www.linkedin.com/in/adamtwright/">LinkedIn</a> </p>
+        <a class="md:hidden" href="https://www.linkedin.com/in/adamtwright/"><img class="bg-whiteCopper rounded-3xl" src="./mainAssets/linkedin.png" alt="LinkedIn Logo"></a>
+
+
+        <p class="hidden md:block">Email me at <a href="mailto:adamtwright7@gmail.com">adamtwright7@gmail.com </a></p>
+        <a class="md:hidden" href="mailto:adamtwright7@gmail.com"><img class="rounded-3xl" src="./mainAssets/perfectSonnet.png" alt="Email Icon"></a>
+
+        <p class="hidden md:block">Text me: <a href="tel:4049187035">404-918-7035</a></p>
+        <a class="md:hidden" href="tel:4049187035"> <img class="bg-whiteCopper rounded-3xl" src="./mainAssets/phone.png" alt="Phone Icon"> </a>
+
+        <p class="hidden md:block">
+            My printable 
             <a href="https://docs.google.com/document/d/1l3HXSKQzm7r9Tpn9wowhmNN_LB3i5uIHbT3i3xpebKo/edit?usp=sharing">resumé.</a>
         </p>
-        <p> 
-            <a href="./attribution.html">Logo and icon attribution</a>
-        </p>
+        <a class="md:hidden" href="https://docs.google.com/document/d/1l3HXSKQzm7r9Tpn9wowhmNN_LB3i5uIHbT3i3xpebKo/edit?usp=sharing">
+            <img class="bg-whiteCopper rounded-3xl" src="./mainAssets/resume.png" alt="Resumé Icon">
+        </a>
     </footer>
 
 </body>
