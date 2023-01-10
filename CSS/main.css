@@ -541,17 +541,23 @@ video {
   transition-duration: 100ms;
 }
 
-.fixed {
-  position: fixed;
-}
-
-.z-10 {
-  z-index: 10;
+.m-4 {
+  margin: 1rem;
 }
 
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .mr-6 {
@@ -560,6 +566,10 @@ video {
 
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .contents {
@@ -572,6 +582,14 @@ video {
 
 .max-w-\[20vw\] {
   max-width: 20vw;
+}
+
+.grid-flow-row {
+  grid-auto-flow: row;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -596,6 +614,10 @@ video {
 
 .justify-around {
   justify-content: space-around;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .border-copper {
@@ -627,10 +649,6 @@ video {
   padding-bottom: 1rem;
 }
 
-.pt-4 {
-  padding-top: 1rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -638,6 +656,11 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-semibold {
@@ -652,6 +675,12 @@ video {
 .text-copper {
   --tw-text-opacity: 1;
   color: rgb(231 144 44 / var(--tw-text-opacity));
+}
+
+/* Smooth scroll */
+
+html{
+  scroll-behavior:smooth
 }
 
 /* Making some classes for all the header icons */

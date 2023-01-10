@@ -5,6 +5,11 @@ Tailwind combines the utility classes from any HTML files with the manual CSS in
 @tailwind components;
 @tailwind utilities;
 
+/* Smooth scroll */
+html{
+  scroll-behavior:smooth
+}
+
 /* Making some classes for all the header icons */
 @layer components{
     .header-icon{
