@@ -73,3 +73,10 @@ a{
     left: 0%;
   }
 }
+
+/* different font for credits */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap');
+
+#pastBody{
+  font-family: 'Alegreya Sans', sans-serif;
+}
